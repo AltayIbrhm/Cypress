@@ -1,0 +1,20 @@
+{
+  "name": "cydeocypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run -b chrome --headless --spec 'cypress/integration/1-getting-started/todo.spec.js'"
+  },
+  "author": "Altay",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-wait-until": "^1.7.2"
+  },
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.1"
+  }
+}
