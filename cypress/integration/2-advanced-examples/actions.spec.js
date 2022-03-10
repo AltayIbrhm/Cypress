@@ -207,14 +207,14 @@ context('Actions', () => {
 
     cy.get('.action-select-multiple')
       .select(['fr-apples', 'fr-oranges', 'fr-bananas'])
-      .invoke('val')
+      .invoke('')
       .should('deep.equal', ['fr-apples', 'fr-oranges', 'fr-bananas'])
 
     // assert the selected values include oranges
     cy.get('.action-select-multiple')
       .invoke('val').should('include', 'fr-oranges')
   })
-
+ 
   it('.scrollIntoView() - scroll an element into view', () => {
     // https://on.cypress.io/scrollintoview
 

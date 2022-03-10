@@ -1,30 +1,37 @@
 
 
+
 describe('Drag and drop feature',()=>{
 
-    it('drag-n-drop using data transfer',()=>{
+    it('Drag n drop using data transfer',()=>{
 
         cy.visit('http://practice.cybertekschool.com/drag_and_drop')
-        dragNdrop()
-    
+
+        drag_and_drop()
+
     })
+
+
 })
 
 
-const dataTransfer = new DataTransfer;
+const datatransfer = new DataTransfer;
 
 
-function dragNdrop(){
+function drag_and_drop(){
 
-    cy.get('#column-a').should('be.visible')
-    .trigger('dragstart');
+    cy.get('#column-a').should('be.visible').trigger('dragstart')
+    cy.wait(500)
 
-    cy.get('#column-b').should('be.visible')
-    .trigger('drop',{dataTransfer});
-
-
-    cy.get('#column-b').should('be.visible')
-    .trigger('dragend');
+    cy.get('#column-b').should('be.visible').trigger('drop',{datatransfer})
+    cy.wait(500)
+    cy.get('#column-b').should('be.visible').trigger('dragend')
 
 
 }
+
+
+//break until 8:12
+
+
+

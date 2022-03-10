@@ -1,36 +1,28 @@
-/// <reference types="cypress" />
 
-var data = require('../../fixtures/staging.json')
+var information =  require('../../fixtures/staging.json')
 
-describe('handling each function',()=>{
+describe('Handling each function',()=>{
+
 
     before(function(){
         cy.visit('https://opensource-demo.orangehrmlive.com/')
-        cy.get('#txtUsername').type('Admin')
-        cy.get('#txtPassword').type('admin123')
-        cy.get('#btnLogin').click()
-
-  
+        cy.get('[name="txtUsername"]').clear().type('Admin')
+        cy.get('#txtPassword').clear().type('admin123')
+        cy.get('[class="button"]').click()
     })
 
-    it('Testing',()=>{
+    it('Testing each text',()=>{
         cy.get('.quickLinkText').each(($el,index)=>{
 
-            cy.log('$el : ', $el.text())
+            cy.log('element : ', $el.text())
             const text = $el.text()
-            expect(text).to.contain(data.quickLaunch[index])
-            
-            if(text == "My Timesheet"){
-                //Jquery element
-                cy.wrap($el).click()
-            }
-        
-        
+
+            expect(text).to.contain(information.quickLaunch[index])
+
+
+
+
+
         })
     })
-
-    
-
- 
-
 })

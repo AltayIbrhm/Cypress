@@ -1,18 +1,15 @@
 {
-
-   "baseUrl" : "https://wikipedia.org",
-   "defaultCommandTimeout":4000,
-   "pageLoadTimeout":4000 ,
-   "viewportHeight":1028,
-   "viewportWidth":1920,
-   "watchForFileChanges":false,
-   "chromeWebSecurity":false,
-   "failOnStatusCode":false,
-
-   "env":{
-      "username":"",
-      "password":""
-   }
-   
-
+  "baseUrl": "https://wikipedia.org",
+  "defaultCommandTimeout": 6000,
+  "pageLoadTimeout": 4000,
+  "viewportHeight": 1028,
+  "viewportWidth": 1920,
+  
+  "chromeWebSecurity": false,
+  "failOnStatusCode": false,
+  "env": {
+    "username": "",
+    "password": ""
+  },
+  "projectId": "r3qu74"
 }

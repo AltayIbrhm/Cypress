@@ -1,8 +1,7 @@
 {
-    "username": "admin",
-    "password":"Test21234",
-    "Url":"asdasdasd",
-    "quickLaunch":["Assign Leave","Leave List","Timesheets","Apply Leave","My Leave","My Timesheet"]
-    
-  }
+  "username": "admin2",
+  "password":"Test2",
+  "Url":"staging.google.com",
+  "quickLaunch":["Assign Leave","Leave List","Timesheets","Apply Leave","My Leave","My Timesheet"]
   
+}
